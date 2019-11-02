@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+<!-- this is how we assign dynami title to the page -->
+{% block title %} | Welcome {% endblock %}
 {% block content %}
 <section id="showcase">
     <div class="container text-center">
@@ -63,6 +65,8 @@
         </div>
     </div>
 </section>
+
+{% include 'partials/_alerts.html' %}
 <!-- Listings -->
   <section id="listings" class="py-5">
     <div class="container">
